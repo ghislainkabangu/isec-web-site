@@ -190,7 +190,7 @@ article {
     padding: 10px;
     box-shadow: 0px 0px 5px whitesmoke;
     background-image: url("https://i.pinimg.com/736x/9b/fb/98/9bfb98cef8fb233907c628c82cf64c7e.jpg");
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), whitesmoke), url("https://i.pinimg.com/736x/9b/fb/98/9bfb98cef8fb233907c628c82cf64c7e.jpg");
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), grey), url("https://i.pinimg.com/736x/9b/fb/98/9bfb98cef8fb233907c628c82cf64c7e.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -215,7 +215,13 @@ article {
     text-transform: uppercase;
     background-color: white;
     color: initial;
-    padding: 5px;
+    padding: 3px;
+    transition: 0.5s;
+}
+
+.serviceBox div a:hover {
+    font-weight: bold;
+    transition: 0.5s;
 }
 
 /****************************************************aside********************/
@@ -223,7 +229,6 @@ aside {
     margin: auto;
     width: 90%;
     margin-top: 100px;
-    margin-bottom: 500px;
 
     h3 {
         text-transform: uppercase;
@@ -239,14 +244,20 @@ aside {
 .splide__slide img {
     width: 95%;
     height: 350PX;
+    border-radius: 10px;
     object-fit: cover;
     transition: 0.5s;
 }
 
 .splide__slide img:hover {
-    width: 100%;
+    width: 105%;
 
     transition: 0.5s;
+}
+
+/*****************************localisation********************************/
+.localisation {
+    margin-top: 100px;
 }
 
 @media screen and (max-width:1200px) {
