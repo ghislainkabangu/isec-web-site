@@ -1,0 +1,213 @@
+body {
+    margin: auto;
+    padding: auto;
+    background-color: whitesmoke;
+    color: black;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.headerFistBox img {
+    width: 100px;
+    padding-top: 20px;
+}
+
+.headerFistBox nav {
+    float: right;
+}
+
+.headerFistBox nav ul {
+    list-style-type: none;
+    padding-right: 50px;
+}
+
+.headerFistBox nav ul li {
+    display: inline-block;
+}
+
+.listItem {
+    padding-right: 50px;
+}
+
+.headerFistBox nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    transition: 0.5s;
+}
+
+.headerFistBox nav ul li a:hover {
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+/*<!----------------------grand titre fonds------------------------>*/
+.blocFont {
+    padding: 15px;
+    background-image: url("https://i.pinimg.com/736x/e5/af/f4/e5aff4c50aef2fafa81b6db1f173a4a9.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    word-wrap: break-word;
+    padding-bottom: 50px;
+}
+
+/*
+.blocFontNewClasse{
+    background-image: url("https://i.pinimg.com/736x/9b/fb/98/9bfb98cef8fb233907c628c82cf64c7e.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: red;
+}
+*/
+.blocFont h1 {
+    text-transform: uppercase;
+    font-size: 100px;
+    color: white;
+}
+
+.blocFont a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 400;
+    border: 1px solid white;
+    padding: 5px;
+    transition: 0.5s;
+}
+
+.blocFont a:hover {
+    border: none;
+    background-color: white;
+    color: inherit;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+/**************************************main*******************************/
+main {
+    margin: auto;
+    width: 90%;
+    margin-top: 100px;
+
+    h3 {
+        font-size: 30px;
+    }
+}
+
+/******************section*******************/
+section {
+    margin-top: 100px;
+}
+
+section div {
+    text-align: center;
+}
+
+section div h4 {
+    font-size: 100px;
+    color: white;
+}
+
+.blocSlideUN {
+    padding: 20px;
+    background-image: url("https://i.pinimg.com/736x/cd/c7/a2/cdc7a2494475c3885c5618dcc7af716a.jpg");
+    background-image: url('https://i.pinimg.com/736x/20/f5/21/20f521248c2b9d07de1b59932871df30.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.blocSlideDeux {
+    padding: 20px;
+    background-image: url("https://i.pinimg.com/736x/89/8f/5f/898f5fbe7a54bea7279a71c7799f1664.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.blocSlideTrois {
+    padding: 20px;
+    background-image: url("https://i.pinimg.com/736x/84/c1/cd/84c1cd1b51b8868e7de7f7942facf9e1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.blocSlideQuatre {
+    padding: 20px;
+    background-image: url("https://i.pinimg.com/736x/43/47/17/43471740ff8ee8ef7c7339d5da2fda0d.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.blocSlideCinq {
+    padding: 20px;
+    background-image: url("https://i.pinimg.com/736x/66/6c/38/666c38d059dbc273c0a5141ab54b4f73.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+/*********************************article services***************************/
+article{
+    margin: auto;
+    width: 90%;
+    margin-top: 100px;
+    h3{
+        font-size: 30px;
+    }
+}
+.serviceBox{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.serviceBox div{
+    flex-basis: 30%;
+    height: auto;
+}
+.serviceBox div p{
+    text-align: justify;
+    padding: 10px;
+    box-shadow: 0px 0px 2px grey;
+}
+@media screen and (max-width:800px) {
+    .headerFistBox nav {
+        display: none;
+    }
+
+    .blocFont h1 {
+        font-size: 50px;
+    }
+
+    main {
+        margin-top: 50px;
+    }
+
+    section {
+        margin-top: 50px;
+    }
+
+    section div h4 {
+        font-size: 50px;
+    }
+    article{
+        margin-top: 50px;
+    }
+    .serviceBox div{
+        flex-basis: 100%;
+    }
+}
