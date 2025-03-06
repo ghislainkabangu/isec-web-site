@@ -25,7 +25,7 @@
             <nav>
                 <ul>
                     <li class="listItem"><a href="#propos" title="à propos">à propos</a></li>
-                    <li class="listItem"><a href="#blog" title="blog">blog</a></li>
+                    <li class="listItem"><a href="#slider2" title="blog">blog</a></li>
                     <li class="listItem"><a href="#service" title="services"> services</a></li>
                     <li class=""><a href="#" title="contactez-nous">contactez-nous</a></li>
                 </ul>
@@ -98,7 +98,7 @@
         </div>
     </main>
     <!-----------------------------section-------------------->
-    <section class="splide" aria-label="Splide Basic HTML Example" id="blog">
+    <section class="splide" aria-label="Splide Basic HTML Example" id="slider2">
         <div class="splide__track">
             <div class="splide__list">
                 <div class="splide__slide">
@@ -141,6 +141,7 @@
                     fiable, conforme aux normes les plus strictes, et optimisée pour votre consommation énergétique.
                     Nous vous permettons de bénéficier d'une énergie sûre et performante, pour un confort optimal et une
                     productivité accrue.</p>
+                <a href="#" title="cliquer pour en savoir plus">en savoir plus</a>
             </div>
             <div>
                 <h4> L'expertise au service de vos installations sanitaires</h4>
@@ -149,6 +150,7 @@
                     intervenons dans tous types de bâtiments, des habitations individuelles aux complexes industriels,
                     en apportant des solutions adaptées à vos besoins et à votre budget. Notre savoir-faire garantit des
                     installations durables, performantes et respectueuses de l'environnement.</p>
+                <a href="#" title="cliquer pour en savoir plus">en savoir plus</a>
             </div>
             <div>
                 <h4>Climatisation et Ventilation : Un air sain et un confort thermique optimal</h4>
@@ -157,6 +159,7 @@
                     garantissent un air sain et un confort thermique optimal, en toutes saisons. Que vous souhaitiez
                     climatiser votre domicile, vos bureaux ou vos locaux industriels, nous vous accompagnons dans le
                     choix et la mise en œuvre de la solution la plus adaptée.</p>
+                <a href="#" title="cliquer pour en savoir plus">en savoir plus</a>
             </div>
             <div>
                 <h4>Gestion de projet et conseil</h4>
@@ -165,6 +168,7 @@
                     approfondie des métiers du bâtiment nous permettent de vous apporter des solutions personnalisées,
                     adaptées à vos besoins et à vos contraintes. Nous vous accompagnons à chaque étape de votre projet,
                     de la conception à la réalisation, en passant par la planification, le suivi et le contrôle.</p>
+                <a href="#" title="cliquer pour en savoir plus">en savoir plus</a>
             </div>
         </div>
     </article>
@@ -173,23 +177,40 @@
         <h3>NOTRE équipe</h3>
         <p>Chez ISEC.sarl, notre équipe est à votre écoute pour vous apporter des solutions personnalisées et un service
             de qualité, avec professionnalisme et réactivité.</p>
+        <div class="boxEquipe">
+            <div>
+                <img src="gallerie/WhatsApp Image 2025-03-06 à 15.46.57_65d0f630.jpg" alt="image membres equipe">
+            </div>
+            <div>
+                <img src="gallerie/WhatsApp Image 2025-03-06 à 15.46.57_7048cf32.jpg" alt="image membres equipe">
+            </div>
+            <div>
+                <img src="gallerie/WhatsApp Image 2025-03-06 à 15.46.58_89bbd1ec.jpg" alt="image membres equipe">
+            </div>
+            <div>
+                <img src="gallerie/WhatsApp Image 2025-03-06 à 15.49.04_a5a366cd.jpg" alt="image membres equipe">
+            </div>
+
+        </div>
     </aside>
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
 <script>
-    document.addEventListener('DOMContentLoaded', function () {
-        var splide = new Splide('.splide', {
-            type: 'loop',
-            perPage: 1,
-            focus: 'center',
-            start: 0,
-            pagination: true,
-            autoplay: true,
-            interval: 3000,
-        });
-        splide.mount();
-    });
+
+    new Splide('#slider2', {
+        type: 'loop',
+        perPage: 1,
+        focus: 'center',
+        start: 0,
+        pagination: true,
+        autoplay: true,
+        interval: 3000,
+    }).mount();
+
+
+    new Splide('#slider3').mount();
 </script>
 <script src="script.js"></script>
 

@@ -164,7 +164,7 @@ section div h4 {
 
 .blocSlideCinq {
     padding: 20px;
-    background-image: url("https://i.pinimg.com/736x/66/6c/38/666c38d059dbc273c0a5141ab54b4f73.jpg");
+    background-image: url("https://i.pinimg.com/736x/e0/0b/21/e00b2170ee888ffd9f814a4767dcb1d4.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -207,7 +207,8 @@ article {
 }
 
 .serviceBox div:hover {
-    padding: 15px;
+    font-size: large;
+    padding: 20px;
     transition: 0.5s;
     cursor: pointer;
 }
@@ -216,11 +217,20 @@ article {
     text-align: justify;
 }
 
+.serviceBox div a {
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: white;
+    color: initial;
+    padding: 5px;
+}
+
 /****************************************************aside********************/
 aside {
     margin: auto;
     width: 90%;
     margin-top: 100px;
+    margin-bottom: 500px;
 
     h3 {
         text-transform: uppercase;
@@ -228,7 +238,23 @@ aside {
         color: orangered;
     }
 }
+.boxEquipe{
+    display: flex;
+    justify-content: space-between;
+}
+.boxEquipe div{
+    flex-basis: 22%;
+    transition: 0.5s;
+}
+.boxEquipe div img{
+    flex-basis: 24%;
+    width: 100%;
+}
 
+.boxEquipe div:hover{
+    flex-basis: 25%;
+    transition: 0.5s;
+}
 @media screen and (max-width:800px) {
     .headerFistBox nav {
         display: none;
@@ -256,5 +282,21 @@ aside {
 
     .serviceBox div {
         flex-basis: 100%;
+    }
+    aside{
+        margin-top: 50px;
+    }
+    .boxEquipe{
+        flex-wrap: wrap;
+    }
+    .boxEquipe div{
+        flex-basis: 100%;
+        margin-top: 15px;
+    }
+    .boxEquipe div:hover{
+        flex-basis: 100%;
+    }
+    .boxEquipe div img{
+        height: 300px;
     }
 }
