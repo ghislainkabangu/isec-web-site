@@ -1,7 +1,7 @@
 body {
     margin: auto;
     padding: auto;
-    background-color: whitesmoke;
+
     color: black;
     font-family: "Poppins", sans-serif;
     font-weight: 300;
@@ -10,6 +10,10 @@ body {
 
 html {
     scroll-behavior: smooth;
+}
+
+.headerFistBox {
+    background-color: orangered;
 }
 
 .headerFistBox img {
@@ -37,7 +41,7 @@ html {
 .headerFistBox nav ul li a {
     text-decoration: none;
     text-transform: uppercase;
-    color: black;
+    color: white;
     transition: 0.5s;
 }
 
@@ -85,7 +89,7 @@ html {
 
 .blocFont a:hover {
     border: none;
-    background-color: white;
+    background-color: orangered;
     color: inherit;
     letter-spacing: 2px;
     transition: 0.5s;
@@ -99,6 +103,11 @@ main {
 
     h3 {
         font-size: 30px;
+        color: orangered;
+    }
+
+    h4 {
+        font-weight: normal;
     }
 }
 
@@ -161,29 +170,65 @@ section div h4 {
     background-attachment: fixed;
     background-size: cover;
 }
+
 /*********************************article services***************************/
-article{
+article {
     margin: auto;
     width: 90%;
     margin-top: 100px;
-    h3{
+
+    h3 {
         font-size: 30px;
+        color: orangered;
     }
 }
-.serviceBox{
+
+.serviceBox {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.serviceBox div{
+
+.serviceBox div {
     flex-basis: 30%;
+    font-weight: 400;
     height: auto;
-}
-.serviceBox div p{
-    text-align: justify;
+    margin-top: 15px;
     padding: 10px;
-    box-shadow: 0px 0px 2px grey;
+    box-shadow: 0px 0px 5px whitesmoke;
+    background-image: url("https://i.pinimg.com/736x/9b/fb/98/9bfb98cef8fb233907c628c82cf64c7e.jpg");
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), orangered), url("https://i.pinimg.com/736x/9b/fb/98/9bfb98cef8fb233907c628c82cf64c7e.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    color: white;
+    transition: 0.5s;
 }
+
+.serviceBox div:hover {
+    padding: 15px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.serviceBox div p {
+    text-align: justify;
+}
+
+/****************************************************aside********************/
+aside {
+    margin: auto;
+    width: 90%;
+    margin-top: 100px;
+
+    h3 {
+        text-transform: uppercase;
+        font-size: 30px;
+        color: orangered;
+    }
+}
+
 @media screen and (max-width:800px) {
     .headerFistBox nav {
         display: none;
@@ -204,10 +249,12 @@ article{
     section div h4 {
         font-size: 50px;
     }
-    article{
+
+    article {
         margin-top: 50px;
     }
-    .serviceBox div{
+
+    .serviceBox div {
         flex-basis: 100%;
     }
 }
