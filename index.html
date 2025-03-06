@@ -177,20 +177,31 @@
         <h3>NOTRE équipe</h3>
         <p>Chez ISEC.sarl, notre équipe est à votre écoute pour vous apporter des solutions personnalisées et un service
             de qualité, avec professionnalisme et réactivité.</p>
-        <div class="boxEquipe">
-            <div>
-                <img src="gallerie/WhatsApp Image 2025-03-06 à 15.46.57_65d0f630.jpg" alt="image membres equipe">
+        <div class="splide" role="group" aria-label="Splide Basic HTML Example" id="slider3">
+            <div class="splide__track">
+                <div class="splide__list">
+                    <div class="splide__slide">
+                        <img src="gallerie/WhatsApp Image 2025-03-06 à 15.46.57_65d0f630.jpg"
+                            alt="image membres equipe">
+                    </div>
+                    <div class="splide__slide">
+                        <img src="gallerie/WhatsApp Image 2025-03-06 à 15.49.04_a5a366cd.jpg"
+                            alt="image membres equipe">
+                    </div>
+                    <div class="splide__slide">
+                        <img src="gallerie/WhatsApp Image 2025-03-06 à 15.46.58_89bbd1ec.jpg"
+                            alt="image membres equipe">
+                    </div>
+                    <div class="splide__slide">
+                        <img src="gallerie/WhatsApp Image 2025-03-06 à 15.46.57_7048cf32.jpg"
+                            alt="image membres equipe">
+                    </div>
+                    <div class="splide__slide">
+                        <img src="gallerie/WhatsApp Image 2025-03-06 à 15.49.04_a5a366cd.jpg"
+                            alt="image membres equipe">
+                    </div>
+                </div>
             </div>
-            <div>
-                <img src="gallerie/WhatsApp Image 2025-03-06 à 15.46.57_7048cf32.jpg" alt="image membres equipe">
-            </div>
-            <div>
-                <img src="gallerie/WhatsApp Image 2025-03-06 à 15.46.58_89bbd1ec.jpg" alt="image membres equipe">
-            </div>
-            <div>
-                <img src="gallerie/WhatsApp Image 2025-03-06 à 15.49.04_a5a366cd.jpg" alt="image membres equipe">
-            </div>
-
         </div>
     </aside>
 
@@ -210,7 +221,21 @@
     }).mount();
 
 
-    new Splide('#slider3').mount();
+    new Splide('#slider3', {
+        type: 'loop',
+        perPage: 3,
+        focus: 'center',
+        start: 0,
+        pagination: true,
+        gap: "30px",
+        autoplay: false,
+        /*interval: 3000,*/
+        breakpoints: {
+            1000: { perPage: 2 },
+            700: { perPage: 1 },
+        },
+
+    }).mount();
 </script>
 <script src="script.js"></script>
 
