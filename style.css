@@ -54,13 +54,14 @@ html {
 /*-------------------------------grand titre fonds------------------------*/
 .blocFont {
     padding: 15px;
-    background-image: url("https://i.pinimg.com/736x/e5/af/f4/e5aff4c50aef2fafa81b6db1f173a4a9.jpg");
+    background-image: url("https://i.pinimg.com/736x/e0/f5/a1/e0f5a1619cb9004e19b85be12262aaaa.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     word-wrap: break-word;
     padding-bottom: 50px;
+    text-align: center;
 }
 
 .blocFont h1 {
