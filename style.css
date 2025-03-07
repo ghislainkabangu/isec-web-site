@@ -12,7 +12,6 @@ html {
 }
 
 .headerFistBox {
-    background-color: orangered;
     background-color: #1E90FF;
     padding: 10px;
 }
@@ -55,13 +54,14 @@ html {
 .blocFont {
     padding: 15px;
     background-image: url("https://i.pinimg.com/736x/e0/f5/a1/e0f5a1619cb9004e19b85be12262aaaa.jpg");
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), grey), url("https://i.pinimg.com/736x/e0/f5/a1/e0f5a1619cb9004e19b85be12262aaaa.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     word-wrap: break-word;
     padding-bottom: 50px;
-    text-align: center;
+   
 }
 
 .blocFont h1 {
@@ -84,7 +84,8 @@ html {
     border: none;
     background-color: white;
     color: inherit;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
+    padding: 10px;
     transition: 0.5s;
 }
 
@@ -133,7 +134,7 @@ section div h4 {
     background-image: url("https://i.pinimg.com/736x/89/8f/5f/898f5fbe7a54bea7279a71c7799f1664.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-size: cover;
 }
 
@@ -142,7 +143,7 @@ section div h4 {
     background-image: url("https://i.pinimg.com/736x/84/c1/cd/84c1cd1b51b8868e7de7f7942facf9e1.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-size: cover;
 }
 
@@ -151,7 +152,7 @@ section div h4 {
     background-image: url("https://i.pinimg.com/736x/43/47/17/43471740ff8ee8ef7c7339d5da2fda0d.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-size: cover;
 }
 
@@ -160,7 +161,7 @@ section div h4 {
     background-image: url("https://i.pinimg.com/736x/e0/0b/21/e00b2170ee888ffd9f814a4767dcb1d4.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-size: cover;
 }
 
