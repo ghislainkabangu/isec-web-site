@@ -54,7 +54,7 @@ html {
 .blocFont {
     padding: 15px;
     background-image: url("https://i.pinimg.com/736x/e0/f5/a1/e0f5a1619cb9004e19b85be12262aaaa.jpg");
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), grey), url("https://i.pinimg.com/736x/e0/f5/a1/e0f5a1619cb9004e19b85be12262aaaa.jpg");
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), grey), url("https://i.pinimg.com/736x/e0/f5/a1/e0f5a1619cb9004e19b85be12262aaaa.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
