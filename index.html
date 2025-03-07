@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Integrale service engineering and consulting</title>
     <link rel="shortcut icon" href="gallerie/WhatsApp Image 2025-03-05 à 16.51.11_f5cccad4.jpg" />
+    <!------------------------------------------------------------------------------------------>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -15,6 +16,15 @@
         href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <!------------------------leafet js-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <!------------------------font awesome----------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -207,8 +217,37 @@
     </aside>
     <!------------------------------------------localisation------------------------------------------>
     <div class="localisation">
-
+        <div class="localisationTitle">
+            <h3>Nous localiser</h3>
+        </div>
+        <div id="map"></div>
     </div>
+    <!---------------footer------------->
+    <footer>
+        <div class="footer">
+            <div>
+                <h1>Integrale service engineering and consulting</h1>
+                <img src="gallerie/WhatsApp Image 2025-03-05 à 16.51.11_f5cccad4.png" alt="">
+                <p><i class="fa-solid fa-location-dot"></i> Avenue Niangwe n°10 – Kinsaha</p>
+                <p><i class="fa-solid fa-location-dot"></i> Province de Kinsaha</p>
+                <p><i class="fa-solid fa-location-dot"></i> République Démocratique du Congo rdc</p>
+            </div>
+            <div>
+                <h3>Nos réseaux sociaux :</h3>
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-phone-volume"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                </ul>
+                <p>ISEC.sarl : À votre écoute pour des solutions sur mesure et un service de qualité.</p>
+            </div>
+        </div>
+        <div class="copy">
+            <p>Integrale service engineering and consulting 2025. Tous Droits Réservés. – Réalisé par Ghislain kab's</p>
+        </div>
+    </footer>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 
@@ -240,6 +279,24 @@
         },
 
     }).mount();
+</script>
+<script>
+    var map = L.map('map').setView([-4.322447, 15.307045], 13);
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
+    var marker = L.marker([-4.3261, 15.3017]).addTo(map);
+    marker.bindPopup("<b>Nous sommes dans la commune de lingwala<br>sur l'avenue Niangwe n°70</b><br>Isec.sarl").openPopup();
+    var circle = L.circle([-4.327933, 15.296498], {
+        color: 'red',
+        fillColor: '#f03',
+        fillOpacity: 0.5,
+        radius: 250
+    }).addTo(map);
+    circle.bindPopup("avenue Niangwe.");
+
+
 </script>
 <script src="script.js"></script>
 
