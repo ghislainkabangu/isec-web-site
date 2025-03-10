@@ -1,10 +1,12 @@
 body {
     margin: auto;
-    padding: auto;
+    padding: 0px;
     color: black;
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-style: normal;
+    color: #333;
+    box-sizing: border-box;
 }
 
 html {
@@ -60,7 +62,7 @@ html {
     background-repeat: no-repeat;
     background-attachment: fixed;
     word-wrap: break-word;
-    padding-bottom: 50px;
+    padding-bottom: 80px;
     text-align: center;
 
 }
@@ -75,9 +77,10 @@ html {
     text-decoration: none;
     color: white;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 300;
     border: 2px solid white;
-    padding: 5px;
+    padding: 10px 20px;
+    border-radius: 5px;
     transition: 0.5s;
 }
 
@@ -96,14 +99,42 @@ main {
     width: 90%;
     margin-top: 100px;
 
+
     h3 {
         font-size: 30px;
         color: #1E90FF;
+        text-align: center;
     }
 
     h4 {
         font-weight: normal;
     }
+}
+
+main .mainBox {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+main .mainBox div {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+}
+
+main .mainBox div:hover {
+    transition: 0.5s;
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+}
+
+main .mainBox div p {
+    font-size: small;
+    font-weight: 400;
 }
 
 /******************section*******************/
@@ -171,57 +202,56 @@ article {
     margin: auto;
     width: 90%;
     margin-top: 100px;
-
-    h3 {
-        font-size: 30px;
-        color: #1E90FF;
-    }
 }
 
+article h3 {
+    font-size: 30px;
+    color: #1E90FF;
+    text-align: center;
+}
+
+
 .serviceBox {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
 }
 
 .serviceBox div {
-    flex-basis: 30%;
-    font-weight: 400;
-    height: auto;
-    margin-top: 15px;
-    padding: 10px;
-    box-shadow: 0px 0px 5px whitesmoke;
-    background-image: url("https://i.pinimg.com/736x/9b/fb/98/9bfb98cef8fb233907c628c82cf64c7e.jpg");
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), grey), url("https://i.pinimg.com/736x/9b/fb/98/9bfb98cef8fb233907c628c82cf64c7e.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: cover;
-    color: white;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: 0.5s;
 }
 
 .serviceBox div:hover {
-    font-size: large;
-    padding: 20px;
-    transition: 0.5s;
+    background-color: gray;
+    color: white;
     cursor: pointer;
+    padding: 25px;
+    transition: 0.5s;
 }
 
 .serviceBox div p {
     text-align: justify;
+    font-size: small;
+    font-weight: 400;
 }
 
 .serviceBox div a {
+    display: inline-block;
+    margin-top: 15px;
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 16px;
     text-decoration: none;
-    text-transform: uppercase;
-    background-color: white;
-    color: initial;
-    padding: 3px;
+    border-radius: 5px;
     transition: 0.5s;
 }
 
 .serviceBox div a:hover {
+    padding: 10px 18px;
     font-weight: bold;
     transition: 0.5s;
 }
@@ -231,6 +261,7 @@ aside {
     margin: auto;
     width: 90%;
     margin-top: 100px;
+    text-align: center;
 
     h3 {
         text-transform: uppercase;
@@ -243,19 +274,11 @@ aside {
     text-align: center;
 }
 
-.splide__slide img {
-    width: 95%;
-    height: 350PX;
-    border-radius: 10px;
-    object-fit: cover;
-    transition: 0.5s;
-    box-shadow: 0px 0px 10px gray;
-}
 
-.splide__slide img:hover {
-    width: 105%;
+aside .splide__slide img {
+    width: 100%;
     height: 400px;
-    transition: 0.5s;
+    border-radius: 8px;
 }
 
 /*****************************localisation********************************/
@@ -263,8 +286,17 @@ aside {
     margin-top: 100px;
 }
 
+.localisation {
+    text-align: center;
+    padding: 40px 20px;
+}
+
 #map {
     height: 400px;
+    width: 100%;
+    max-width: 1400px;
+    margin: 20px auto;
+    border-radius: 8px;
 }
 
 .localisationTitle {
@@ -280,7 +312,6 @@ aside {
 
 /********************footer*******************/
 footer {
-    background-color: orange;
     color: white;
     padding: 2px;
     background-color: #1E90FF;
@@ -329,7 +360,7 @@ h3 {
 
 .copy {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 100px;
     font-size: small;
     border-top: 1px solid white
 }
@@ -367,25 +398,9 @@ h3 {
         margin-top: 50px;
     }
 
-    .serviceBox div {
-        flex-basis: 100%;
-    }
 
     aside {
         margin-top: 50px;
-    }
-
-    .boxEquipe {
-        flex-wrap: wrap;
-    }
-
-    .boxEquipe div {
-        flex-basis: 100%;
-        margin-top: 15px;
-    }
-
-    .boxEquipe div:hover {
-        flex-basis: 100%;
     }
 
     .boxEquipe div img {
