@@ -386,6 +386,12 @@ h3 {
         margin-top: 50px;
     }
 
+    main .mainBox {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 3fr));
+        gap: 30px;
+    }
+
     section {
         margin-top: 50px;
     }
@@ -398,6 +404,11 @@ h3 {
         margin-top: 50px;
     }
 
+    .serviceBox {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 3fr));
+        gap: 30px;
+    }
 
     aside {
         margin-top: 50px;
