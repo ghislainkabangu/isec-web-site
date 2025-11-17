@@ -2,6 +2,7 @@ body {
     margin: auto;
     padding: 0px;
     color: black;
+    background-color: white;
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -319,8 +320,8 @@ aside h3 {
 
 
 aside .splide__slide img {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     object-fit: cover;
 }
