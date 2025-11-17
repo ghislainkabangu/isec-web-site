@@ -375,7 +375,7 @@ footer {
 
 .footer div h1,
 h3 {
-    text-transform: lowercase;
+    text-transform: initial;
     font-size: 30px;
 }
 
