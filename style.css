@@ -79,11 +79,13 @@ html {
     transition: 0.5s;
     left: -0%;
 }
-.closeMenu{
+
+.closeMenu {
     float: right;
-    padding-right:20px;
+    padding-right: 20px;
     padding-bottom: 100px;
 }
+
 /*-------------------------------grand titre fonds------------------------*/
 .blocFont {
     padding: 15px;
@@ -102,6 +104,12 @@ html {
 .blocFont h1 {
     font-size: 95px;
     color: white;
+}
+
+.blocFont h3 {
+    color: white;
+    font-size: 40px;
+    text-transform: initial;
 }
 
 .blocFont a {
@@ -136,10 +144,7 @@ main h3 {
     font-size: 40px;
     color: #04294e;
     text-align: center;
-}
-
-main h4 {
-    font-weight: normal;
+    text-transform: initial;
 }
 
 main .mainBox {
@@ -149,16 +154,17 @@ main .mainBox {
 }
 
 main .mainBox div {
-
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: 0.5s;
+    background-color: whitesmoke;
 }
 
 main .mainBox div:hover {
     transition: 0.5s;
     background-color: gray;
+    background-color: #04294e;
     color: white;
     cursor: pointer;
 }
@@ -168,10 +174,7 @@ main .mainBox div p {
     font-weight: 400;
 }
 
-.mainBoxDiffColor {
-    background-color: #04294e;
-    color: white;
-}
+
 
 /******************section*******************/
 section {
@@ -244,7 +247,7 @@ article h3 {
     font-size: 40px;
     color: #04294e;
     text-align: center;
-    text-transform: lowercase;
+    text-transform: initial;
 }
 
 
@@ -263,7 +266,6 @@ article h3 {
 }
 
 .serviceBox div:hover {
-    background-color: gray;
     background-color: #04294e;
     color: white;
     cursor: pointer;
@@ -308,7 +310,7 @@ aside h3 {
     font-size: 40px;
     color: #04294e;
     text-align: center;
-    text-transform: lowercase;
+    text-transform: initial;
 }
 
 .splide__slide {
@@ -317,13 +319,11 @@ aside h3 {
 
 
 aside .splide__slide img {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     object-fit: cover;
 }
-
-
 
 /*****************************localisation********************************/
 .localisation {
@@ -335,7 +335,7 @@ aside .splide__slide img {
     font-size: 40px;
     color: #04294e;
     text-align: center;
-    text-transform: lowercase;
+    text-transform: initial;
 }
 
 .localisationTitle {
@@ -350,9 +350,6 @@ aside .splide__slide img {
     margin: 20px auto;
     border-radius: 8px;
 }
-
-
-
 
 /********************footer*******************/
 footer {
@@ -455,7 +452,7 @@ h3 {
     }
 
     .blocFont h1 {
-        font-size: 45px;
+        font-size: 50px;
     }
 
     main {
