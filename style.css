@@ -6,7 +6,7 @@ body {
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-style: normal;
-    color: #333;
+    color: #111827;
     box-sizing: border-box;
 }
 
@@ -15,8 +15,7 @@ html {
 }
 
 .headerFistBox {
-    background-color: #04294e;
-    background-color:#F57C00;
+    background-color: #111827;
     padding: 10px;
 }
 
@@ -90,7 +89,7 @@ html {
 /*-------------------------------grand titre fonds------------------------*/
 .blocFont {
     padding: 15px;
-    background-image: url("https://plus.unsplash.com/premium_photo-1661908782924-de673a5c6988?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZWxlY3RyaWNhbCUyMGluc3RhbGxhdGlvbnxlbnwwfHwwfHx8MA%3D%3D");
+    background-image: url("https://i.pinimg.com/1200x/5c/34/46/5c34466b8697d52fffaf5ae8b345a142.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -114,23 +113,21 @@ html {
 
 .blocFont a {
     text-decoration: none;
-    color: white;
+    color: black;
     text-transform: uppercase;
-    font-weight: 300;
-    border: 2px solid white;
+    font-weight: 400;
     padding: 10px 20px;
     border-radius: 5px;
     transition: 0.5s;
 }
 
 .blocFont a:hover {
-    border: none;
-    background-color: white;
-    color: inherit;
     letter-spacing: 1px;
+     border-radius: 0px;
     padding: 10px;
-    font-weight: bold;
+    border-bottom : 2px solid #111827;
     transition: 0.5s;
+    
 }
 
 /**************************************main*******************************/
@@ -142,7 +139,7 @@ main {
 
 main h3 {
     font-size: 40px;
-    color: #F57C00;
+    color:  #caad09;
     text-align: center;
     text-transform: initial;
 }
@@ -164,7 +161,6 @@ main .mainBox div {
 main .mainBox div:hover {
     transition: 0.5s;
     background-color: gray;
-    background-color: #F57C00;
     color: white;
     cursor: pointer;
 }
@@ -197,7 +193,7 @@ section div h4 {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-  
+
 }
 
 .blocSlideDeux {
@@ -357,9 +353,9 @@ aside .splide__slide img {
 /********************footer*******************/
 footer {
     margin-top: 100px;
-    color: white;
+    color: #111827;
     padding: 2px;
-    background-color: #F57C00;
+    background-color:  #caad09;
     word-wrap: break-word;
 }
 
@@ -391,7 +387,7 @@ h3 {
 
 .footer p a {
     text-decoration: none;
-    color: white;
+    color: #111827;
     transition: 0.5S;
 }
 
@@ -412,7 +408,7 @@ h3 {
 
 .footer div ul li a {
     text-decoration: none;
-    color: white;
+    color: #111827;
     transition: 0.5s;
 }
 
@@ -425,7 +421,7 @@ h3 {
     text-align: center;
     margin-top: 100px;
     font-size: small;
-    border-top: 1px solid white
+    border-top: 1px solid #111827;
 }
 
 /***************************************************************************************************************/
