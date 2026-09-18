@@ -56,7 +56,7 @@ html {
 }
 
 .mobile_navigation {
-    background-color: #F57C00;
+   background-color: #111827;
     position: fixed;
     width: 100%;
     height: 100%;
@@ -170,11 +170,15 @@ main .mainBox div p {
     font-weight: 400;
 }
 
-
+main .mainBox div i{
+    font-size: 30px;
+}
 
 /******************section*******************/
 section {
     margin-top: 100px;
+    background-color: gray;
+     height: 400px;
 }
 
 section div {
@@ -193,6 +197,7 @@ section div h4 {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    height: 100%;
 
 }
 
@@ -203,6 +208,7 @@ section div h4 {
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
+    height: 100%;
 }
 
 .blocSlideTrois {
@@ -212,36 +218,39 @@ section div h4 {
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
+    height: 100%;
 }
 
 .blocSlideQuatre {
     padding: 20px;
-    background-image: url("https://plus.unsplash.com/premium_photo-1682145344450-34d8323dec84?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-image: url("https://i.pinimg.com/originals/ac/66/e9/ac66e9d8b0c3abf0196353b3feea71ba.gif");
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
+    height: 100%;
 }
 
 .blocSlideCinq {
     padding: 20px;
-    background-image: url("https://images.unsplash.com/photo-1578574577315-3fbeb0cecdc2?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-image: url("https://i.pinimg.com/736x/c0/6f/ef/c06fef147cb0e9992a7ac7ed1e7be9f2.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
+    height: 100%;
 }
 
 /*********************************article services***************************/
 article {
     margin: auto;
     width: 90%;
-    margin-top: 100px;
+    margin-top: 0px;
 }
 
 article h3 {
     font-size: 40px;
-    color: #F57C00;
+    color: #caad09;
     text-align: center;
     text-transform: initial;
 }
@@ -262,8 +271,6 @@ article h3 {
 }
 
 .serviceBox div:hover {
-    background-color: #F57C00;
-    color: white;
     cursor: pointer;
     padding: 25px;
     transition: 0.5s;
@@ -278,7 +285,7 @@ article h3 {
 .serviceBox div a {
     display: inline-block;
     margin-top: 15px;
-    background-color: #F57C00;
+    background-color: #caad09;
     color: #fff;
     padding: 8px 16px;
     text-decoration: none;
@@ -288,8 +295,9 @@ article h3 {
 
 .serviceBox div a:hover {
     background-color: white;
-    color: #04294e;
+    color: #caad09;
     padding: 10px 18px;
+    border: 2px solid #caad09;
     font-weight: bold;
     transition: 0.5s;
 }
@@ -307,7 +315,7 @@ aside {
 
 aside h3 {
     font-size: 40px;
-    color: #F57C00;
+    color: #caad09;
     text-align: center;
     text-transform: initial;
 }
@@ -332,7 +340,7 @@ aside .splide__slide img {
 
 .localisation h3 {
     font-size: 40px;
-    color: #F57C00;
+    color: #caad09;
     text-align: center;
     text-transform: initial;
 }
@@ -466,6 +474,7 @@ h3 {
 
     section {
         margin-top: 50px;
+         height: 250px;
     }
 
     section div h4 {
