@@ -16,6 +16,7 @@ html {
 
 .headerFistBox {
     background-color: #04294e;
+    background-color:#F57C00;
     padding: 10px;
 }
 
@@ -56,8 +57,7 @@ html {
 }
 
 .mobile_navigation {
-    background-color: #04294e;
-    background-color: rgb(222, 12, 12);
+    background-color: #F57C00;
     position: fixed;
     width: 100%;
     height: 100%;
@@ -90,8 +90,7 @@ html {
 /*-------------------------------grand titre fonds------------------------*/
 .blocFont {
     padding: 15px;
-    background-image: url("https://i.pinimg.com/736x/e0/f5/a1/e0f5a1619cb9004e19b85be12262aaaa.jpg");
-    background-image: url("https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-image: url("https://plus.unsplash.com/premium_photo-1661908782924-de673a5c6988?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZWxlY3RyaWNhbCUyMGluc3RhbGxhdGlvbnxlbnwwfHwwfHx8MA%3D%3D");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -143,7 +142,7 @@ main {
 
 main h3 {
     font-size: 40px;
-    color: #04294e;
+    color: #F57C00;
     text-align: center;
     text-transform: initial;
 }
@@ -165,7 +164,7 @@ main .mainBox div {
 main .mainBox div:hover {
     transition: 0.5s;
     background-color: gray;
-    background-color: #04294e;
+    background-color: #F57C00;
     color: white;
     cursor: pointer;
 }
@@ -193,12 +192,12 @@ section div h4 {
 
 .blocSlideUN {
     padding: 20px;
-    background-image: url("https://i.pinimg.com/736x/cd/c7/a2/cdc7a2494475c3885c5618dcc7af716a.jpg");
-    background-image: url("https://images.unsplash.com/photo-1517420704952-d9f39e95b43e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fGVsZWN0cmljaWVufGVufDB8fDB8fHww");
+    background-image: url("https://plus.unsplash.com/premium_photo-1661960643553-ccfbf7d921f6?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZWxlY3RyaWNhbCUyMGVuZ2luZWVyaW5nfGVufDB8fDB8fHww");
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+  
 }
 
 .blocSlideDeux {
@@ -246,7 +245,7 @@ article {
 
 article h3 {
     font-size: 40px;
-    color: #04294e;
+    color: #F57C00;
     text-align: center;
     text-transform: initial;
 }
@@ -267,7 +266,7 @@ article h3 {
 }
 
 .serviceBox div:hover {
-    background-color: #04294e;
+    background-color: #F57C00;
     color: white;
     cursor: pointer;
     padding: 25px;
@@ -283,7 +282,7 @@ article h3 {
 .serviceBox div a {
     display: inline-block;
     margin-top: 15px;
-    background-color: #04294e;
+    background-color: #F57C00;
     color: #fff;
     padding: 8px 16px;
     text-decoration: none;
@@ -312,7 +311,7 @@ aside {
 
 aside h3 {
     font-size: 40px;
-    color: #04294e;
+    color: #F57C00;
     text-align: center;
     text-transform: initial;
 }
@@ -337,7 +336,7 @@ aside .splide__slide img {
 
 .localisation h3 {
     font-size: 40px;
-    color: #04294e;
+    color: #F57C00;
     text-align: center;
     text-transform: initial;
 }
@@ -360,7 +359,7 @@ footer {
     margin-top: 100px;
     color: white;
     padding: 2px;
-    background-color: #04294e;
+    background-color: #F57C00;
     word-wrap: break-word;
 }
 
