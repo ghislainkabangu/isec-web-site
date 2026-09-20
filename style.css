@@ -16,6 +16,7 @@ html {
 
 .headerFistBox {
     background-color: #111827;
+    background-color:#caad09;
     padding: 10px;
 }
 
@@ -61,6 +62,7 @@ html {
     width: 100%;
     height: 100%;
     left: -100%;
+    z-index: 1;
     transition: 0.5s;
 }
 
@@ -123,9 +125,10 @@ html {
 
 .blocFont a:hover {
     letter-spacing: 1px;
-     border-radius: 0px;
+    border-radius: 0px;
     padding: 10px;
-    border-bottom : 2px solid #111827;
+    font-weight: bold;
+    border-bottom : 1px solid #111827;
     transition: 0.5s;
     
 }
@@ -139,7 +142,7 @@ main {
 
 main h3 {
     font-size: 40px;
-    color:  #caad09;
+    color:  #111827;
     text-align: center;
     text-transform: initial;
 }
@@ -177,8 +180,7 @@ main .mainBox div i{
 /******************section*******************/
 section {
     margin-top: 100px;
-    background-color: gray;
-     height: 400px;
+    height: 450px;
 }
 
 section div {
@@ -251,6 +253,7 @@ article {
 article h3 {
     font-size: 40px;
     color: #caad09;
+    color:  #111827;
     text-align: center;
     text-transform: initial;
 }
@@ -316,20 +319,29 @@ aside {
 aside h3 {
     font-size: 40px;
     color: #caad09;
+    color:  #111827;
     text-align: center;
     text-transform: initial;
 }
+aside .splide{
+    height: 400px;
+}
 
-.splide__slide {
+aside .splide__slide {
+    border-radius: 5px;
     text-align: center;
+    padding: 2px;
+    height: 100%;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
 
 aside .splide__slide img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
+    width: 100%;
+    height: 300px;
+    position: static;
+    border-radius: 5px;
+    object-fit: contain;
 }
 
 /*****************************localisation********************************/
@@ -340,7 +352,7 @@ aside .splide__slide img {
 
 .localisation h3 {
     font-size: 40px;
-    color: #caad09;
+    color:  #111827;
     text-align: center;
     text-transform: initial;
 }
@@ -383,12 +395,13 @@ footer {
 .footer div h1,
 h3 {
     text-transform: initial;
-    font-size: 30px;
+    font-size: 20px;
+    color:white;
 }
 
 .footer div img {
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -401,6 +414,7 @@ h3 {
 
 .footer p a:hover {
     font-weight: bold;
+    color:white;
 }
 
 .footer div ul {
@@ -421,7 +435,8 @@ h3 {
 }
 
 .footer div ul li a:hover {
-    padding: 10px;
+    padding: 2px;
+    color: white;
     transition: 0.5s;
 }
 
