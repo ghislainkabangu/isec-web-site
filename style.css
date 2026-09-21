@@ -16,7 +16,7 @@ html {
 
 .headerFistBox {
     background-color: #111827;
-    background-color:#caad09;
+    background-color: #caad09;
     padding: 10px;
 }
 
@@ -57,7 +57,7 @@ html {
 }
 
 .mobile_navigation {
-   background-color: #111827;
+    background-color: #111827;
     position: fixed;
     width: 100%;
     height: 100%;
@@ -128,9 +128,9 @@ html {
     border-radius: 0px;
     padding: 10px;
     font-weight: bold;
-    border-bottom : 1px solid #111827;
+    letter-spacing: 2px;
     transition: 0.5s;
-    
+
 }
 
 /**************************************main*******************************/
@@ -142,7 +142,7 @@ main {
 
 main h3 {
     font-size: 40px;
-    color:  #111827;
+    color: #111827;
     text-align: center;
     text-transform: initial;
 }
@@ -173,7 +173,7 @@ main .mainBox div p {
     font-weight: 400;
 }
 
-main .mainBox div i{
+main .mainBox div i {
     font-size: 30px;
 }
 
@@ -253,7 +253,7 @@ article {
 article h3 {
     font-size: 40px;
     color: #caad09;
-    color:  #111827;
+    color: #111827;
     text-align: center;
     text-transform: initial;
 }
@@ -319,18 +319,19 @@ aside {
 aside h3 {
     font-size: 40px;
     color: #caad09;
-    color:  #111827;
+    color: #111827;
     text-align: center;
     text-transform: initial;
 }
-aside .splide{
+
+aside .splide {
     height: 400px;
 }
 
 aside .splide__slide {
     border-radius: 5px;
     text-align: center;
-    padding: 2px;
+    padding: 10px;
     height: 100%;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
 }
@@ -341,7 +342,7 @@ aside .splide__slide img {
     height: 300px;
     position: static;
     border-radius: 5px;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 /*****************************localisation********************************/
@@ -352,7 +353,7 @@ aside .splide__slide img {
 
 .localisation h3 {
     font-size: 40px;
-    color:  #111827;
+    color: #111827;
     text-align: center;
     text-transform: initial;
 }
@@ -375,7 +376,7 @@ footer {
     margin-top: 100px;
     color: #111827;
     padding: 2px;
-    background-color:  #caad09;
+    background-color: #caad09;
     word-wrap: break-word;
 }
 
@@ -396,7 +397,7 @@ footer {
 h3 {
     text-transform: initial;
     font-size: 20px;
-    color:white;
+    color: white;
 }
 
 .footer div img {
@@ -414,7 +415,7 @@ h3 {
 
 .footer p a:hover {
     font-weight: bold;
-    color:white;
+    color: white;
 }
 
 .footer div ul {
@@ -489,7 +490,7 @@ h3 {
 
     section {
         margin-top: 50px;
-         height: 250px;
+        height: 250px;
     }
 
     section div h4 {
@@ -506,6 +507,9 @@ h3 {
         gap: 30px;
     }
 
+    #map {
+        height: 300px;
+    }
 
     .footer {
         flex-wrap: wrap;

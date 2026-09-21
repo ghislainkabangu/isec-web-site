@@ -38,4 +38,8 @@ main {
     .title {
         font-size: 30px;
     }
+
+    .video_realisaion {
+        height: 200px;
+    }
 }
