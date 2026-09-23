@@ -1,415 +1,393 @@
+<!DOCTYPE html>
+<html lang="fr">
 
-    <!-- Mots-clés SEO (utile en Afrique / RDC) -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ISEC MEP.SARL | Ingénierie, Conseil et Services Techniques</title>
+    <meta name="description"
+        content="ISEC MEP.SARL accompagne vos projets à travers des solutions en ingénierie, électricité, plomberie, climatisation, ventilation et services techniques.">
     <meta name="keywords"
-        content="électricité Kinshasa, plomberie Kinshasa, climatisation RDC, ventilation, maintenance, ingénierie MEP, ISEC MEP Sarl, Lingwala, travaux techniques">
-
-    <!-- SEO Local -->
-    <meta name="geo.region" content="CD-KN">
-    <meta name="geo.placename" content="Kinshasa, Lingwala">
-    <meta name="geo.position" content="-4.3261;15.3017">
-    <meta name="ICBM" content="-4.3261, 15.3017">
-
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://ghislainkabangu.github.io/isec-web-site/">
-
-    <!-- Open Graph (Facebook / WhatsApp / LinkedIn) -->
-    <meta property="og:title" content="ISEC MEP Sarl – Ingénierie, Électricité et Maintenance à Kinshasa">
+        content="ingénierie Kinshasa, électricité, plomberie, climatisation, ventilation, HVAC, conseil technique, ISEC MEP">
+    <meta property="og:title" content="ISEC MEP.SARL | Ingénierie, Conseil et Services Techniques">
     <meta property="og:description"
-        content="Ingénierie MEP, électricité, plomberie, ventilation, climatisation et maintenance professionnelle à Kinshasa.">
-    <meta property="og:image" content="gallerie/logo isec mep.jpeg">
-    <meta property="og:url" content="https://ghislainkabangu.github.io/isec-web-site/">
+        content="Ingénierie, électricité, plomberie, climatisation, ventilation et conseil technique.">
     <meta property="og:type" content="business.business">
-    <meta property="og:locale" content="fr_CD">
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="ISEC MEP Sarl – Ingénierie et Maintenance à Kinshasa">
-    <meta name="twitter:description"
-        content="Solutions professionnelles en électricité, plomberie et climatisation à Kinshasa.">
-    <meta name="twitter:image" content="gallerie/logo isec mep.jpeg">
-
-    <link rel="shortcut icon" href="gallerie/logo isec.jpeg" />
-
-    <!-- Les tierces bibliothèques sont intactes -->
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%230B3D91%22/><text x=%2250%22 y=%2266%22 font-size=%2255%22 fill=%22%23F9A825%22 text-anchor=%22middle%22 font-family=%22sans-serif%22>I</text></svg>">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link
-        href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap"
         rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
-
-
-    <!------------------------leafet js-->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-
-    <!------------------------font awesome----------------------->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-
-    <!-- JSON-LD amélioré (LocalBusiness pour Google Maps / SEO Local) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "ISEC MEP Sarl",
-      "image": "gallerie/logo isec mep.jpeg",
-      "url": "https://ghislainkabangu.github.io/isec-web-site/",
-      "telephone": "+243828588141",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Avenue Niangwe n°10",
-        "addressLocality": "Kinshasa",
-        "addressRegion": "Lingwala",
-        "addressCountry": "CD"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": -4.3261,
-        "longitude": 15.3017
-      },
-      "sameAs": [
-        "https://wa.me/243828588141"
-      ]
-    }
-    </script>
-
 </head>
 
-
 <body>
-    <header id="accueil">
-        <div class="headerFistBox">
-            <nav class="descktop_navigation">
-                <ul>
-                    <li class="listItem"><a href="#propos" title="à propos"><i class="fas fa-building"></i> à propos</a>
-                    </li>
-                    <li class="listItem"><a href="#service" title="services"><i class="fas fa-bolt"></i>nos services</a>
-                    </li>
-                    <li class="listItem"><a href="realisation/realisation.html" title="nos réalisations"><i class="fas fa-project-diagram"></i> nos
-                            réalisations</a>
-                    </li>
-                    <li class=""><a href="tel:+243828588141" title="contactez-nous"><i class="fa-solid fa-phone"></i>
-                            contactez-nous </a></li>
-                </ul>
-            </nav>
-            <!--------------mobile navigation-->
-            <a href="#" title="menu" class="boutonMenu"><i class="fa-solid fa-bars"></i></a>
-            <nav class="mobile_navigation">
-                <ul>
-                    <li><a href="" class="closeMenu">X</a></li>
-                    <li class="listItem"><a href="#propos" title="à propos" class="linkMobile"><i
-                                class="fas fa-building"></i> à propos</a>
-                    </li>
-                    <li class="listItem"><a href="#service" title="services" class="linkMobile"><i
-                                class="fas fa-bolt"></i>nos services</a>
-                    </li>
-                    <li class="listItem"><a href="realisation/realisation.html" title="nos réalisations" class="linkMobile"><i
-                                class="fas fa-project-diagram"></i> nos
-                            réalisations</a>
-                    <li class=""><a href="tel:+243828588141" title="contactez-nous" class="linkMobile"><i
-                                class="fa-solid fa-phone"></i>
-                            contactez-nous </a></li>
-                </ul>
+    <a class="skip-link" href="#contenu">Aller au contenu</a>
 
+    <header class="navbar" id="navbar">
+        <div class="wrap nav-inner">
+            <a href="#accueil" class="brand"><span class="brand-mark">I</span> ISEC <span>MEP</span></a>
+            <nav class="nav-links" id="navLinks" aria-label="Navigation principale">
+                <a href="#accueil">Accueil</a>
+                <a href="#apropos">À propos</a>
+                <a href="#services">Services</a>
+                <a href="#expertise">Expertise</a>
+                <a href="#processus">Processus</a>
+                <a href="#realisations">Réalisations</a>
+                <a href="#pourquoi">Pourquoi nous ?</a>
+                <a href="#contact">Contact</a>
             </nav>
-        </div>
-        <!--------------------------------------LE Grand titre fonds------------------------>
-        <!----****************************************************************************************************---->
-        <div class="blocFont">
-            <h1> ISEC MEP.SARL <i class="fa-solid fa-lightbulb"></i></h1>
-            
-            <a href="#propos" title="Cliquez sur ce lien">Savoir plus sur nous</a>
+            <div class="nav-actions">
+                <a href="#contact" class="btn btn-gold btn-sm">Demander un devis</a>
+                <button class="hamburger" id="hamburger" aria-expanded="false" aria-controls="navLinks"
+                    aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
         </div>
     </header>
-    <!-------------------------main bloc à propos (ici on fait la déscription de l'entreprise isec mep sarl) -------------------------->
-    <!----*************************************************************************************************************************---->
-    <main id="propos">
-        <h3>Qui sommes-nous?</h3>
-        <div class="mainBox">
-            <div class="mainBoxDiffColor">
-                <i class="fa-solid fa-lightbulb"></i>
-                <h4>Intégrale Service Engineering and Consulting (ISEC.sarl) : 7 ans d'expertise au service de vos
-                    projets</h4>
-                <p>Depuis sa création, Intégrale Service Engineering and Consulting (ISEC.sarl) s'est imposée comme un
-                    acteur
-                    majeur dans les domaines de l'électricité, de la plomberie, de la climatisation et de la
-                    ventilation. Forts
-                    de 7 années d'expérience, nous avons développé une expertise pointue et une connaissance approfondie
-                    des
-                    enjeux spécifiques à chaque secteur. Notre équipe, composée d'ingénieurs et de techniciens
-                    qualifiés, met
-                    son savoir-faire au service de vos projets, de la conception à la réalisation, en passant par la
-                    maintenance. Nous nous engageons à vous fournir des solutions innovantes, durables et adaptées à vos
-                    besoins, dans le respect des normes de qualité et de sécurité les plus strictes.</p>
+
+    <section class="hero" id="accueil">
+        <div class="hero-grid" aria-hidden="true"></div>
+        <div class="hero-overlay"></div>
+        <div class="wrap hero-content">
+            <p class="eyebrow">ISEC MEP.SARL</p>
+            <h1>L'ingénierie au service<br>de vos projets</h1>
+            <p class="hero-sub">Ingénierie • Conseil • Installations techniques</p>
+            <p class="hero-text">Nous concevons, accompagnons et réalisons des solutions techniques adaptées aux
+                exigences de
+                vos projets.</p>
+            <div class="cta-row">
+                <a href="#services" class="btn btn-gold">Découvrir nos services</a>
+                <a href="#contact" class="btn btn-outline">Demander un devis</a>
             </div>
-            <div>
-                <i class="fa-solid fa-screwdriver-wrench"></i>
-                <h4>Des solutions complètes et personnalisées pour répondre à vos exigences</h4>
-                <p>Chez Isec Mep.sarl, nous comprenons que chaque projet est unique. C'est pourquoi nous accordons une
-                    importance
-                    particulière à l'écoute de nos clients et à la compréhension de leurs besoins. Que vous soyez un
-                    particulier, une entreprise ou une collectivité, nous vous proposons des solutions complètes et
-                    personnalisées, allant de l'étude de faisabilité à la mise en service. En matière d'électricité,
-                    nous
-                    réalisons des installations électriques industrielles et tertiaires, des systèmes d'éclairage, des
-                    tableaux
-                    électriques et des réseaux de distribution. En plomberie, nous assurons l'installation et la
-                    maintenance
-                    de
-                    réseaux sanitaires, de systèmes de chauffage et de production d'eau chaude. En climatisation et
-                    ventilation,
-                    nous concevons et installons des systèmes de climatisation, de ventilation mécanique contrôlée (VMC)
-                    et
-                    de
-                    traitement de l'air.</p>
-            </div>
-        
-        </div>
-    </main>
-    <!-----------------------------section (ici se trouve le caroussel présentant nos services-------------------->
-    <!----****************************************************************************************************---->
-    <section class="splide" aria-label="Splide Basic HTML Example" id="slider2">
-        <div class="splide__track">
-            <div class="splide__list">
-                <div class="splide__slide">
-                    <div class="blocSlideUN">
-                        <h4>électricité</h4>
-                    </div>
-                </div>
-                <div class="splide__slide">
-                    <div class="blocSlideDeux">
-                        <h4>plomberie</h4>
-                    </div>
-                </div>
-                <div class="splide__slide">
-                    <div class="blocSlideTrois">
-                        <h4>climatisation</h4>
-                    </div>
-                </div>
-                <div class="splide__slide">
-                    <div class="blocSlideQuatre">
-                        <h4>ventilation</h4>
-                    </div>
-                </div>
-                <div class="splide__slide">
-                    <div class="blocSlideCinq">
-                        <h4>Études techniques</h4>
-                    </div>
-                </div>
-            </div>
+            <ul class="hero-indicators">
+                <li><i class="fa-solid fa-check"></i> Expertise technique</li>
+                <li><i class="fa-solid fa-check"></i> Solutions sur mesure</li>
+                <li><i class="fa-solid fa-check"></i> Accompagnement de projet</li>
+            </ul>
         </div>
     </section>
-    <!-------------------------------------nos services (ici on présente les services de l'entreprise en détail) ----------------------------------------------------->
-    <!----***********************************************************************************************************************************---->
-    <article id="service">
-        <h3>Nos services</h3>
-        <div class="serviceBox">
-            <div>
-                <h4>L'énergie au cœur de votre confort et de votre performance</h4>
-                <p>Isec Mep.sarl vous apporte des solutions électriques sur mesure, qu'il s'agisse de l'installation de
-                    systèmes complexes pour les industries, de la mise en place d'éclairages innovants pour les espaces
-                    tertiaires ou de la sécurisation de votre domicile. Notre expertise garantit une installation
-                    fiable, conforme aux normes les plus strictes, et optimisée pour votre consommation énergétique.
-                    Nous vous permettons de bénéficier d'une énergie sûre et performante, pour un confort optimal et une
-                    productivité accrue.</p>
-                <a href="#footer" title="cliquer pour en savoir plus">en savoir plus</a>
-            </div>
-            <div>
-                <h4> L'expertise au service de vos installations sanitaires</h4>
-                <p>Isec Mep.sarl vous propose une gamme complète de services de plomberie, de l'installation de réseaux
-                    sanitaires à la mise en place de systèmes de chauffage et de production d'eau chaude. Nous
-                    intervenons dans tous types de bâtiments, des habitations individuelles aux complexes industriels,
-                    en apportant des solutions adaptées à vos besoins et à votre budget. Notre savoir-faire garantit des
-                    installations durables, performantes et respectueuses de l'environnement.</p>
-                <a href="#footer" title="cliquer pour en savoir plus">en savoir plus</a>
-            </div>
-            <div>
-                <h4>Climatisation et Ventilation : Un air sain et un confort thermique optimal</h4>
-                <p>Isec Mep.sarl conçoit et installe des systèmes de climatisation et de ventilation sur mesure, adaptés
-                    à
-                    vos besoins et à vos contraintes. Nous vous proposons des solutions innovantes et performantes, qui
-                    garantissent un air sain et un confort thermique optimal, en toutes saisons. Que vous souhaitiez
-                    climatiser votre domicile, vos bureaux ou vos locaux industriels, nous vous accompagnons dans le
-                    choix et la mise en œuvre de la solution la plus adaptée.</p>
-                <a href="#footer" title="cliquer pour en savoir plus">en savoir plus</a>
-            </div>
-            <div>
-                <h4>Gestion de projet et conseil</h4>
-                <p>Isec Mep.sarl propose des services de gestion de projet et de conseil, pour vous accompagner dans la
-                    réalisation de vos projets les plus ambitieux. Notre expertise en ingénierie et notre connaissance
-                    approfondie des métiers du bâtiment nous permettent de vous apporter des solutions personnalisées,
-                    adaptées à vos besoins et à vos contraintes. Nous vous accompagnons à chaque étape de votre projet,
-                    de la conception à la réalisation, en passant par la planification, le suivi et le contrôle.</p>
-                <a href="#footer" title="cliquer pour en savoir plus">en savoir plus</a>
-            </div>
-        </div>
-    </article>
-    <!------------------------------------------------------aside equipe ---------------------------->
-    <!----****************************************************************************************************---->
-    <aside>
-        <h3>Notre équipe <i class="fas fa-users"></i></h3>
-        <p>Chez Isec Mep.sarl, notre équipe est à votre écoute pour vous apporter des solutions personnalisées et un
-            service
-            de qualité, avec professionnalisme et réactivité.</p>
-        <div class="splide" role="group" aria-label="Splide Basic HTML Example" id="slider3">
-            <div class="splide__track">
-                <div class="splide__list">
-                    <div class="splide__slide">
-                        <img src="https://i.pinimg.com/1200x/51/0f/c3/510fc3505958e098ff0802900808c2b2.jpg"
-                            alt="image membres equipe" loading="lazy">
-                        <h5>Joël KASS</h5>
-                        <h5>Plombier</h5>
+
+    <main id="contenu">
+        <!------------------------------------about------------------------------------------------------------------------------------------>
+        <!------------------------------------------------------------------------------------------------------------------------------>
+        <section id="apropos" class="section">
+            <div class="wrap">
+                <p class="tag">Qui sommes-nous</p>
+                <h2>Plongez au cœur de l'expertise, du savoir-faire et de l'innovation d'ISEC MEP.SARL</h2>
+                <p class="lead">ISEC MEP.SARL accompagne ses clients avec une approche fondée sur la rigueur technique,
+                    l'écoute
+                    et l'engagement qualité de l'étude jusqu'à la mise en service de chaque projet.</p>
+                <div class="feature-grid">
+                    <div class="feature"><i class="fa-solid fa-drafting-compass"></i>
+                        <h3>Expertise technique</h3>
+                        <p>Une approche fondée sur la maîtrise technique et la précision.</p>
                     </div>
-                    <div class="splide__slide">
-                        <img src="gallerie/WhatsApp Image 2025-03-06 à 15.46.57_65d0f630.jpg" alt="image membres equipe"
-                            loading="lazy">
-                        <h5>Glodi MAKOBO</h5>
-                        <h5>Electricien</h5>
+                    <div class="feature"><i class="fa-solid fa-gears"></i>
+                        <h3>Solutions sur mesure</h3>
+                        <p>Des solutions adaptées aux besoins et contraintes de chaque projet.</p>
                     </div>
-                    <div class="splide__slide">
-                        <img src="gallerie/WhatsApp Image 2025-03-06 à 15.46.58_89bbd1ec.jpg" alt="image membres equipe"
-                            loading="lazy">
-                        <h5>Hervé NZUZI</h5>
-                        <h5>Electricien</h5>
+                    <div class="feature"><i class="fa-solid fa-lightbulb"></i>
+                        <h3>Innovation</h3>
+                        <p>L'intégration de méthodes et de solutions modernes.</p>
                     </div>
-                    <div class="splide__slide">
-                        <img src="https://i.pinimg.com/736x/5e/b7/43/5eb743dfc61221afbaa6aa92181aac9b.jpg"
-                            alt="image membres equipe" loading="lazy">
-                        <h5>Hervé MAYELE</h5>
-                        <h5>Architecte</h5>
-                    </div>
-                    <div class="splide__slide">
-                        <img src="gallerie/WhatsApp Image 2025-03-06 à 15.49.04_a5a366cd.jpg" alt="image membres equipe"
-                            loading="lazy">
-                        <h5>Kevin KABANGU</h5>
-                        <h5>Electricien</h5>
+                    <div class="feature"><i class="fa-solid fa-shield-halved"></i>
+                        <h3>Fiabilité</h3>
+                        <p>Un engagement constant envers la qualité et la satisfaction du client.</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </aside>
-    <!------------------------------------------la localisation de l'entreprise isec mep sarl------------------------------------------>
-    <!----****************************************************************************************************---->
-    <div class="localisation">
-        <div class="localisationTitle">
-            <h3>Nous localiser <i class="fas fa-location-dot"></i></h3>
-        </div>
-        <div id="map"></div>
-    </div>
-    <!-------------------------------------------------------footer--------------------------------------------->
-    <!----****************************************************************************************************---->
-    <footer id="footer">
-        <div class="footer">
-            <div>
-                <h1>Integrale Service Engineering and Consulting</h1>
-                <img src="gallerie/logo isec.jpeg" alt="logo isec mep sarl" loading="lazy">
-                <p><i class="fa-solid fa-location-dot"></i> Avenue Niangwe n°10 – Kinshasa, Ville Province de
-                    Kinshasa, République Démocratique du Congo rdc</p>
-
+        </section>
+        <!-------------------------------------services----------------------------------------------------------------------------------------->
+        <!------------------------------------------------------------------------------------------------------------------------------>
+        <section id="services" class="section alt">
+            <div class="wrap">
+                <p class="tag">Nos services</p>
+                <h2>Des solutions techniques complètes</h2>
+                <div class="card-grid">
+                    <article class="card"><i class="fa-solid fa-bolt"></i>
+                        <h3>Électricité</h3>
+                        <p>Conception et réalisation d'installations électriques et solutions techniques.</p><a
+                            href="#contact" class="card-link">En savoir plus <i class="fa-solid fa-arrow-right"></i></a>
+                    </article>
+                    <article class="card"><i class="fa-solid fa-faucet-drip"></i>
+                        <h3>Plomberie</h3>
+                        <p>Installation et gestion des réseaux de plomberie et distribution.</p><a href="#contact"
+                            class="card-link">En savoir plus <i class="fa-solid fa-arrow-right"></i></a>
+                    </article>
+                    <article class="card"><i class="fa-solid fa-snowflake"></i>
+                        <h3>Climatisation</h3>
+                        <p>Solutions de climatisation adaptées aux bâtiments et espaces professionnels.</p><a
+                            href="#contact" class="card-link">En savoir plus <i class="fa-solid fa-arrow-right"></i></a>
+                    </article>
+                    <article class="card"><i class="fa-solid fa-wind"></i>
+                        <h3>Ventilation</h3>
+                        <p>Conception et installation de systèmes de ventilation.</p><a href="#contact"
+                            class="card-link">En savoir
+                            plus <i class="fa-solid fa-arrow-right"></i></a>
+                    </article>
+                    <article class="card"><i class="fa-solid fa-compass-drafting"></i>
+                        <h3>Ingénierie &amp; conception</h3>
+                        <p>Études, conception technique et accompagnement des projets.</p><a href="#contact"
+                            class="card-link">En
+                            savoir plus <i class="fa-solid fa-arrow-right"></i></a>
+                    </article>
+                    <article class="card"><i class="fa-solid fa-comments"></i>
+                        <h3>Conseil &amp; accompagnement</h3>
+                        <p>Conseil technique, assistance et accompagnement dans la réalisation des projets.</p><a
+                            href="#contact" class="card-link">En savoir plus <i class="fa-solid fa-arrow-right"></i></a>
+                    </article>
+                </div>
             </div>
-            <div>
-                <h3>Nos Services</h3>
-
-                <p><i class="fa-solid fa-bolt"></i> Électricité</p>
-                <p><i class="fa-solid fa-faucet"></i> Plomberie</p>
-                <p><i class="fa-solid fa-snowflake"></i> Climatisation & Froid</p>
-                <p><i class="fa-solid fa-drafting-compass"></i> Études techniques</p>
-                <p><i class="fa-solid fa-tools"></i> Maintenance & Dépannage</p>
-
+        </section>
+        <!-----------------------------exprtise------------------------------------------------------------------------------------------------->
+        <!------------------------------------------------------------------------------------------------------------------------------>
+        <section id="expertise" class="section">
+            <div class="wrap">
+                <p class="tag">Notre expertise</p>
+                <h2>Notre expertise au service de vos projets</h2>
+                <p class="lead">De l'étude initiale à l'accompagnement post-livraison, chaque étape est maîtrisée par
+                    nos
+                    équipes.</p>
+                <div class="expertise-grid">
+                    <span>Étude</span><span>Conception</span><span>Planification</span><span>Installation</span>
+                    <span>Supervision</span><span>Contrôle</span><span>Mise en service</span><span>Accompagnement</span>
+                </div>
             </div>
-            <div>
-                <h3>Liens Rapides</h3>
-
-                <p><a href="#accueil" title="Accueil"><i class="fa-solid fa-house"></i> Accueil</a></p>
-                <p><a href="#propos" title="à propos"><i class="fa-solid fa-building"></i> À propos</a></p>
-                <p><a href="#service" title="service"><i class="fa-solid fa-list-check"></i> Services</a></p>
-                <p><a href="realisation/realisation.html" title="blog"><i class="fa-solid fa-blog"></i> Nos réalisations</a></p>
-                <p><a href="tel:+243828588141" title="footer"><i class="fa-solid fa-phone-volume"></i> Contact</a></p>
-
-            </div>
-            <div>
-                <h3>Nos Réseaux Sociaux</h3>
-                <ul>
-                    <li><a href="https://wa.me/243828588141" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        </section>
+        <!-----------------------------------processus------------------------------------------------------------------------------------------->
+        <!------------------------------------------------------------------------------------------------------------------------------>
+        <section id="processus" class="section alt">
+            <div class="wrap">
+                <p class="tag">Notre méthode de travail</p>
+                <h2>Une approche structurée, étape par étape</h2>
+                <ol class="timeline">
+                    <li><span class="tl-num">01</span>
+                        <h3>Analyse</h3>
+                        <p>Compréhension du besoin et des contraintes.</p>
                     </li>
-                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                    <li><a href="tel:+243828588141"><i class="fa-solid fa-phone-volume"></i></a></li>
-                    <li><a href="mailto:kabangughislain77@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-                </ul>
-                <p>ISEC.sarl : À votre écoute pour des solutions sur mesure et un service de qualité.</p>
+                    <li><span class="tl-num">02</span>
+                        <h3>Étude</h3>
+                        <p>Analyse technique et définition des solutions.</p>
+                    </li>
+                    <li><span class="tl-num">03</span>
+                        <h3>Conception</h3>
+                        <p>Élaboration de la solution technique.</p>
+                    </li>
+                    <li><span class="tl-num">04</span>
+                        <h3>Réalisation</h3>
+                        <p>Mise en œuvre et installation.</p>
+                    </li>
+                    <li><span class="tl-num">05</span>
+                        <h3>Suivi</h3>
+                        <p>Contrôle, supervision et accompagnement.</p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+        <!----------------------------------nos réalisations---------------------------------------------------------------------------->
+        <!------------------------------------------------------------------------------------------------------------------------------>
+        <section id="realisations" class="section">
+            <div class="wrap">
+                <p class="tag">Nos réalisations</p>
+                <h2>Des projets qui témoignent de notre savoir-faire</h2>
+                <div class="filters" role="tablist" aria-label="Filtrer les réalisations">
+                    <button class="filter-btn active" data-filter="all">Tous</button>
+                    <button class="filter-btn" data-filter="electricite">Électricité</button>
+                    <button class="filter-btn" data-filter="plomberie">Plomberie</button>
+                    <button class="filter-btn" data-filter="hvac">Climatisation</button>
+                    <button class="filter-btn" data-filter="ingenierie">Ingénierie</button>
+                    <button class="filter-btn" data-filter="construction">Domotique</button>
+                </div>
+                <div class="gallery" id="gallery">
+                    <article class="gcard" data-cat="electricite">
+                        <div class="gph"><img src="gallerie/projet3.jpeg" alt="les images de nos réalisations"></div>
+                        <span class="gcat">Électricité</span>
+                        <h3>Eléctrification du bâtiment dans son </h3>
+                        <p>Pour le compte de la societé...</p><a href="#contact" class="card-link">Voir le projet <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </article>
+                    <article class="gcard" data-cat="plomberie">
+                        <div class="gph"><img src="gallerie/projet1.jpeg" alt="les images de nos réalisations"></div>
+                        <span class="gcat">Plomberie</span>
+                        <h3>Installation de canalisation d'eaux</h3>
+                        <p>Pour le compte d'un client.</p><a href="#contact" class="card-link">Voir le projet <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </article>
+                    <article class="gcard" data-cat="hvac">
+                        <div class="gph"><img src="gallerie/projet4.jpeg" alt="les images de nos réalisations"></div>
+                        <span class="gcat">CLIMATISATION</span>
+                        <h3>Climatisation de l'intérieur de l'immeuble</h3>
+                        <p>Pour le compte de la societé..</p><a href="#contact" class="card-link">Voir le projet <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </article>
+                    <article class="gcard" data-cat="ingenierie">
+                        <div class="gph"><img src="gallerie/propjet2.jpeg" alt="les images de nos réalisations"></div>
+                        <span class="gcat">Ingénierie</span>
+                        <h3>Etudes de faisabilité de technique</h3>
+                        <p>Pour le compte d'un client.</p><a href="#contact" class="card-link">Voir le projet <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </article>
+                    <article class="gcard" data-cat="construction">
+                        <div class="gph"><img src="gallerie/projet3.jpeg" alt="les images de nos réalisations"></div>
+                        <span class="gcat">Domotique</span>
+                        <h3>Mise en place du système intelligent d'ouverture des </h3>
+                        <p>Pour le compte de la societé..</p><a href="#contact" class="card-link">Voir le projet <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </article>
+                </div>
+                <div class="video-block">
+                    <h3><i class="fa-solid fa-circle-play"></i> Vidéo de présentation</h3>
+                    <video controls preload="metadata" poster="gallerie/logo isec.jpeg" width="100%" height="300px">
+                        <source src="gallerie/8486789-uhd_3840_2160_30fps.mp4" type="video/mp4">
+                        Votre navigateur ne supporte pas la lecture de cette vidéo.
+                    </video>
+                </div>
+            </div>
+        </section>
+        <!--------------------------------------pourquoi nous ?---------------------------------------------------------------------------------------->
+        <!------------------------------------------------------------------------------------------------------------------------------>
+        <section id="pourquoi" class="section alt">
+            <div class="wrap">
+                <p class="tag">Pourquoi nous choisir</p>
+                <h2>Pourquoi choisir ISEC MEP.SARL ?</h2>
+                <div class="why-grid">
+                    <div class="why"><i class="fa-solid fa-award"></i>
+                        <div>
+                            <h3>Expertise</h3><span>Une approche technique orientée vers les besoins réels du
+                                projet.</span>
+                        </div>
+                    </div>
+                    <div class="why"><i class="fa-solid fa-check-double"></i>
+                        <div>
+                            <h3>Qualité</h3><span>Une attention particulière portée à la qualité des solutions mises en
+                                œuvre.</span>
+                        </div>
+                    </div>
+                    <div class="why"><i class="fa-solid fa-lightbulb"></i>
+                        <div>
+                            <h3>Innovation</h3><span>Des solutions modernes et adaptées aux évolutions
+                                techniques.</span>
+                        </div>
+                    </div>
+                    <div class="why"><i class="fa-solid fa-user-tie"></i>
+                        <div>
+                            <h3>Accompagnement</h3><span>Un suivi du projet à différentes étapes.</span>
+                        </div>
+                    </div>
+                    <div class="why"><i class="fa-solid fa-shield-halved"></i>
+                        <div>
+                            <h3>Fiabilité</h3><span>Une approche basée sur la rigueur et le respect des
+                                engagements.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-------------------------------------------les nombres clés------------------------------------------------------------------->
+        <!------------------------------------------------------------------------------------------------------------------------------>
+        <section class="section stats-section">
+            <div class="wrap">
+                <div class="stats-grid">
+                    <div class="stat"><span class="stat-num" data-target="50">+50</span><span
+                            class="stat-label">Projets</span>
+                    </div>
+                    <div class="stat"><span class="stat-num" data-target="70">+70</span><span
+                            class="stat-label">Clients</span>
+                    </div>
+                    <div class="stat"><span class="stat-num" data-target="7">+7</span><span class="stat-label">Années
+                            d'expérience</span></div>
+                    <div class="stat"><span class="stat-num" data-target="4">4</span><span class="stat-label">Domaines
+                            d'expertise</span></div>
+                </div>
+            </div>
+        </section>
+        <!------------------------------------------------parler du projet--------------------------------------------->
+        <!--------------------------------------------------------------------------------------------------------------->
+        <section class="cta-banner">
+            <div class="wrap">
+                <h2>Vous avez un projet ? Parlons-en.</h2>
+                <p>Notre équipe est disponible pour échanger sur vos besoins et vous accompagner dans la recherche de
+                    solutions
+                    adaptées.</p>
+                <a href="#contact" class="btn btn-gold">Parler de mon projet</a>
+            </div>
+        </section>
+        <!-------------------------------------contact et formulaire-------------------------------------------------------->
+        <!------------------------------------------------------------------------------------------------------------------>
+        <section id="contact" class="section contact-section">
+            <div class="wrap contact-grid">
+                <div>
+                    <p class="tag">Contact</p>
+                    <h2>Parlons de votre projet</h2>
+                    <p class="lead">Décrivez vos besoins, nous revenons vers vous rapidement avec une proposition
+                        claire.</p>
+                    <ul class="contact-info">
+                        <li><i class="fa-solid fa-phone"></i> +243 828 588 141</li>
+                        <li><i class="fa-solid fa-envelope"></i>serviceclient@gmail.com</li>
+                        <li><i class="fa-solid fa-location-dot"></i>Avenue Niangwe n°10 – Kinshasa, Ville Province de
+                            Kinshasa, République Démocratique du Congo rdc</li>
+                        <li><i class="fa-solid fa-clock"></i> Du lundi à Samedi de 8h00 à 15h30'</li>
+                    </ul>
+                </div>
+                <form class="contact-form" id="contactForm" novalidate>
+                    <div class="form-row"><label for="nom">Nom complet</label><input type="text" id="nom" name="nom"
+                            required>
+                    </div>
+                    <div class="form-row form-row-2">
+                        <div><label for="email">Email</label><input type="email" id="email" name="email" required></div>
+                        <div><label for="tel">Téléphone</label><input type="tel" id="tel" name="tel"></div>
+                    </div>
+                    <div class="form-row form-row-2">
+                        <div><label for="entreprise">Entreprise</label><input type="text" id="entreprise"
+                                name="entreprise"></div>
+                        <div><label for="service">Service recherché</label>
+                            <select id="service" name="service">
+                                <option>Électricité</option>
+                                <option>Plomberie</option>
+                                <option>Climatisation</option>
+                                <option>Ventilation</option>
+                                <option>Ingénierie &amp; conception</option>
+                                <option>Conseil &amp; accompagnement</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row"><label for="message">Message</label><textarea id="message" name="message"
+                            rows="4" required></textarea></div>
+                    <button type="submit" class="btn btn-gold">Envoyer ma demande</button>
+                    <p class="form-feedback" id="formFeedback" role="status" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+
+    </main>
+    <!----------------------------------------------footer------------------------------------------------------------------------>
+    <!------------------------------------------------------------------------------------------------------------------------->
+    <footer class="footer">
+        <div class="wrap footer-grid">
+            <div>
+                <p class="brand footer-brand"><span class="brand-mark">I</span> ISEC MEP.SARL</p>
+                <p class="footer-tagline">Ingénierie • Conseil • Services techniques</p>
+            </div>
+            <nav aria-label="Liens du pied de page">
+                <a href="#accueil">Accueil</a><a href="#apropos">À propos</a><a href="#services">Services</a>
+                <a href="#realisations">Réalisations</a><a href="#contact">Contact</a>
+            </nav>
+            <div class="socials">
+                <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="mailto:#" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
             </div>
         </div>
-        <div class="copy">
-            <p>Integrale service engineering and consulting 2026. Tous Droits Réservés. – Réalisé par Ghislain kab's</p>
-        </div>
+        <p class="footer-copy">© 2026 ISEC MEP.SARL — Tous droits réservés.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-
-<script>
-
-    new Splide('#slider2', {
-        type: 'fade',
-        perPage: 1,
-        focus: 'center',
-        start: 0,
-        pagination: true,
-        autoplay: true,
-        interval: 2000,
-        rewind: true,
-        speed: 2000
-    }).mount();
-
-
-    new Splide('#slider3', {
-        type: 'loop',
-        perPage: 3,
-        focus: 'center', 
-        start: 0,
-        pagination: true,
-        gap: "30px",
-        autoplay: true,
-        interval: 2000,
-        breakpoints: {
-            1024: { perPage: 3 },
-            1000: { perPage: 2 },
-            800: { perPage: 1 },
-        },
-
-    }).mount();
-</script>
-<script>
-    var map = L.map('map').setView([-4.322447, 15.307045], 13);
-    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        maxZoom: 19,
-        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-    }).addTo(map);
-    var marker = L.marker([-4.3261, 15.3017]).addTo(map);
-    marker.bindPopup("<b>Nous sommes dans la commune de lingwala<br>sur l'avenue Niangwe n°70</b><br>Isec.sarl").openPopup();
-    var circle = L.circle([-4.327933, 15.296498], {
-        color: 'red',
-        fillColor: '#f03',
-        fillOpacity: 0.5,
-        radius: 250
-    }).addTo(map);
-    circle.bindPopup("avenue Niangwe.");
-
-
-</script>
-<script src="script.js"></script>
 
 </html>
