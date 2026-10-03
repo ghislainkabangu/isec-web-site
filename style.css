@@ -593,7 +593,6 @@ select:focus-visible {
   color: rgba(255, 255, 255, .5);
   font-size: 26px;
 }
-
 .gcard .gcat {
   display: block;
   color: var(--gold);
@@ -611,13 +610,13 @@ select:focus-visible {
 .gcard h3 {
   margin: 0 20px 8px;
   font-size: 16px;
-  color: var(--white)
+  color: var(--navy)
 }
 
 .gcard p {
   margin: 0 20px 14px;
   font-size: 14px;
-  color: var(--gold)
+  color: var(--navy)
 }
 
 .gcard .card-link {
@@ -642,6 +641,7 @@ select:focus-visible {
   width: 100%;
   border-radius: 8px;
   background: #000;
+  display: block;
 }
 
 /************************ WHY CHOOSE US *************************************/
