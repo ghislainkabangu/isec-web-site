@@ -77,7 +77,9 @@ select:focus-visible {
   outline-offset: 2px;
 }
 
-/* BUTTONS */
+/*********************** BUTTONS *****************************/
+/* ======================================================== */
+
 .btn {
   display: inline-flex;
   align-items: center;
@@ -120,7 +122,9 @@ select:focus-visible {
   font-size: 13.5px;
 }
 
-/* NAVBAR */
+/*************************** NAVBAR ***************************/
+/* ========================================================== */
+
 .navbar {
   position: sticky;
   top: 0;
@@ -323,7 +327,9 @@ select:focus-visible {
   }
 }
 
-/* SECTIONS */
+/****************************************** SECTIONS **************************/
+/* ========================================================================== */
+
 .section {
   padding: 88px 24px;
 }
@@ -377,7 +383,9 @@ select:focus-visible {
   transform: none;
 }
 
-/* feature grid */
+/********************************** FEATURE GRID + ABOUT ********************************/
+/* ==================================================================================== */
+
 .feature-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -411,7 +419,9 @@ select:focus-visible {
   font-size: 14.5px;
 }
 
-/* card grid */
+/********************************** SERVICES CARD GRID ***************************/
+/* ============================================================================ */
+
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -463,7 +473,9 @@ select:focus-visible {
   color: var(--gold);
 }
 
-/* expertise chips */
+/********************************** EXPERTISE CHIPS **************************************/
+/* ===================================================================================== */
+
 .expertise-grid {
   display: flex;
   flex-wrap: wrap;
@@ -479,13 +491,9 @@ select:focus-visible {
   font-weight: 600;
 }
 
-.expertise-grid span:hover {
-  background: var(--white);
-  color: var(--navy);
-  border: 1px solid var(--navy);
-}
+/* ***************µµµµµµµµ*************** TIMELINE *************µµµµµµµ**********************/
+/* ======================================================================================== */
 
-/* timeline */
 .timeline {
   list-style: none;
   margin: 0;
@@ -525,7 +533,9 @@ select:focus-visible {
   }
 }
 
-/************************************* filters + gallery !******************************************/
+/******************** FILTERS + GALLERY + VIDEO REALISATION !*****************************/
+/* ==================================================================================== */
+
 .filters {
   display: flex;
   flex-wrap: wrap;
@@ -586,7 +596,7 @@ select:focus-visible {
 
 .gcard .gcat {
   display: block;
- color: var(--gold);
+  color: var(--gold);
   font-size: 12.5px;
   font-weight: 700;
   text-transform: uppercase;
@@ -607,7 +617,7 @@ select:focus-visible {
 .gcard p {
   margin: 0 20px 14px;
   font-size: 14px;
-   color: var(--navy)
+  color: var(--gold)
 }
 
 .gcard .card-link {
@@ -634,7 +644,9 @@ select:focus-visible {
   background: #000;
 }
 
-/* why choose us */
+/************************ WHY CHOOSE US *************************************/
+/* ======================================================================== */
+
 .why-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -666,7 +678,9 @@ select:focus-visible {
   color: #5B6577;
 }
 
-/* stats */
+/*************************** STATS COMPTER *********************************/
+/* ======================================================================= */
+
 .stats-section {
   background: var(--dark);
   color: var(--white);
@@ -699,7 +713,9 @@ select:focus-visible {
   color: var(--gold);
 }
 
-/* CTA banner */
+/*************************** CTA BANNER ************************************/
+/* ======================================================================= */
+
 .cta-banner {
   background: linear-gradient(120deg, var(--navy), var(--blue));
   color: var(--white);
@@ -720,7 +736,9 @@ select:focus-visible {
   font-size: 16px;
 }
 
-/* contact */
+/******************************** CONTACT **********************************/
+/* ======================================================================= */
+
 .contact-section {
   background: var(--navy);
   color: var(--white);
@@ -759,6 +777,16 @@ select:focus-visible {
 .contact-info i {
   color: var(--gold);
   width: 20px;
+}
+
+.contact-info a {
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.contact-info a:hover {
+  transition: 0.5s;
+  color: var(--gold);
 }
 
 .contact-form {
@@ -830,7 +858,9 @@ textarea.invalid {
   margin-top: 10px;
 }
 
-/* footer */
+/***********************************FOOTER *********************************/
+/* ====================================================================== */
+
 .footer {
   background: var(--dark);
   color: #B9C2D0;
@@ -894,7 +924,9 @@ textarea.invalid {
   margin: 22px 0 0;
 }
 
+/* ====================================================================== */
 /* RESPONSIVE */
+/* ====================================================================== */
 @media (max-width:900px) {
   .nav-links {
     display: none;
@@ -922,5 +954,9 @@ textarea.invalid {
     background: var(--navy);
     padding: 20px 24px;
     gap: 16px;
+  }
+
+  .video-block video {
+    height: 300px;
   }
 }
