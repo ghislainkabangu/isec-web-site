@@ -574,6 +574,7 @@ select:focus-visible {
   border-radius: 10px;
   overflow: hidden;
   transition: transform .2s ease;
+
 }
 
 .gcard.hidden {
@@ -593,6 +594,7 @@ select:focus-visible {
   color: rgba(255, 255, 255, .5);
   font-size: 26px;
 }
+
 .gcard .gcat {
   display: block;
   color: var(--gold);
@@ -610,7 +612,7 @@ select:focus-visible {
 .gcard h3 {
   margin: 0 20px 8px;
   font-size: 16px;
-  color: var(--navy)
+  color: var(--gray-light);
 }
 
 .gcard p {
@@ -621,6 +623,7 @@ select:focus-visible {
 
 .gcard .card-link {
   margin: 0 20px 20px;
+  color: var(--navy)
 }
 
 .video-block {
